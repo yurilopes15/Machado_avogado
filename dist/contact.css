@@ -1,5 +1,7 @@
 .contact { grid-template-columns: minmax(0, .9fr) minmax(0, 1.2fr); gap: 3rem; }
 .contact-box { width: 100%; }
+.developer-credit { display: block; margin-top: .4rem; font-size: .8125rem; line-height: 1.6; color: var(--muted); }
+.developer-credit span { color: var(--gold); }
 .form-field { display: flex; flex-direction: column; gap: .375rem; margin-bottom: 1.125rem; min-width: 0; }
 .form-field label { font-size: .9375rem; color: var(--text); }
 .form-field label span { color: var(--gold); }
