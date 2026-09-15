@@ -1,0 +1,81 @@
+/* Comfortable touch targets and a single reading column on phones. */
+main, section, article, .hero-content, .contact-box { min-width: 0; }
+.button { font-size: .875rem; }
+@media (max-width: 800px) {
+  html { scroll-padding-top: 1rem; }
+  body { font-size: 1rem; line-height: 1.75; }
+  header { padding: 1rem max(1.25rem, env(safe-area-inset-left)); gap: 1rem; flex-wrap: wrap; justify-content: space-between; }
+  header .brand { flex: 1 1 12rem; min-width: 0; gap: .65rem; white-space: normal; }
+  .brand-logo { width: 3.5rem; height: 3.125rem; }
+  .brand-name { font-size: clamp(1.125rem, 3.6vw, 1.5rem); line-height: 1.3; overflow-wrap: break-word; }
+  .menu { flex: 0 0 auto; min-height: 2.75rem; min-width: 2.75rem; padding: .6rem .7rem; line-height: 1.5; }
+  .menu span { margin-left: .25rem; }
+  nav { flex: 0 0 100%; gap: .25rem; padding-top: .75rem; border-top: 1px solid var(--line); }
+  nav a { min-height: 3rem; padding: .75rem 1rem; font-size: 1rem; line-height: 1.5; }
+  nav a:hover { background: var(--panel); }
+  nav .outline { text-align: center; margin-top: .5rem; }
+  .hero { display: flex; flex-direction: column; padding: 0; min-height: 0; }
+  .portrait { position: relative; align-self: center; flex: 0 0 auto; width: min(100%, 28rem); height: auto; aspect-ratio: 575 / 640; top: auto; right: auto; bottom: auto; }
+  .portrait img { top: -17.2%; }
+  .portrait:after { background: linear-gradient(0deg, var(--bg), transparent 25%), linear-gradient(90deg, var(--bg), transparent 18%, transparent 92%, var(--bg)); }
+  .hero-content { width: 100%; max-width: 40rem; margin: -2.5rem auto 0; padding: 0 1.5rem 2.75rem; }
+  .hero .eyebrow { font-size: .875rem; letter-spacing: .1em; margin-bottom: 1rem; }
+  h1 { font-size: clamp(2.5rem, 8.7vw, 3.5rem); line-height: 1.12; letter-spacing: -.025em; max-width: none; margin-bottom: 1.25rem; }
+  .rule { margin: 1.5rem 0; }
+  .intro { font-size: 1rem; line-height: 1.8; max-width: none; margin-bottom: 0; }
+  .actions { display: grid; grid-template-columns: 1fr; gap: .875rem; margin: 1.75rem 0; }
+  .button { width: 100%; min-height: 3.25rem; padding: 1rem; font-size: .875rem; line-height: 1.5; text-align: center; }
+  .nation { gap: .875rem; align-items: flex-start; }
+  .nation strong { font-size: .875rem; letter-spacing: .045em; line-height: 1.5; }
+  .nation p { font-size: 1rem; }
+  .shield { flex: 0 0 auto; margin-top: .25rem; }
+  .values { grid-template-columns: 1fr; gap: 0; padding: .5rem 1.5rem; }
+  .values article, .values article:nth-child(2), .values article:last-child { display: grid; grid-template-columns: 2.75rem minmax(0, 1fr); column-gap: 1.25rem; padding: 1.75rem 0; text-align: left; border: 0; border-bottom: 1px solid var(--line); }
+  .values article:last-child { border-bottom: 0; }
+  .values .line-icon { grid-row: 1 / 3; margin: .125rem 0 0; }
+  .values h2 { font-size: .9375rem; line-height: 1.5; letter-spacing: .06em; margin-bottom: .5rem; }
+  .values h2 br { display: none; }
+  .values p { font-size: 1rem; line-height: 1.7; }
+  .section { padding: 3rem 1.5rem; width: 100%; max-width: 40rem; }
+  .section .eyebrow { font-size: .875rem; letter-spacing: .09em; margin-bottom: 1rem; }
+  .section h2 { font-size: clamp(1.875rem, 6vw, 2.5rem); line-height: 1.2; margin-bottom: 1.5rem; overflow-wrap: break-word; }
+  .section h2 br { display: none; }
+  .section h3 { font-size: 1.5rem; line-height: 1.3; }
+  .section p, .steps p { font-size: 1rem; line-height: 1.8; }
+  .about { gap: 0; }
+  .credentials { display: grid; grid-template-columns: 1fr; gap: 1rem; margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+  .credentials p { margin: 0; }
+  .credentials small { font-size: .875rem; }
+  .area-grid { grid-template-columns: 1fr; gap: 0; margin-top: 1.75rem; }
+  .area-grid article { padding: 1.5rem 0; }
+  .area-grid article:last-child { padding-bottom: 0; }
+  .area-grid p { max-width: none; }
+  .steps { gap: 1.5rem; margin-top: 1.75rem; }
+  .steps article { padding-top: 1.5rem; }
+  .steps p { margin-bottom: 0; }
+  .contact { gap: 1rem; }
+  .contact-box { padding: 1.5rem; }
+  .contact-box h3 { margin-top: 0; }
+  .contact-box small { font-size: .875rem; }
+  footer { flex-direction: column; align-items: flex-start; gap: 1.5rem; padding: 2rem 1.5rem max(2rem, env(safe-area-inset-bottom)); }
+  footer .brand { white-space: normal; gap: .75rem; }
+  footer .brand-logo { width: 3.5rem; height: 3.125rem; }
+  footer .brand-name { font-size: 1.375rem; }
+  footer p { font-size: .9375rem; }
+  footer p small { font-size: .875rem; }
+  footer > a:last-child { display: inline-flex; align-items: center; min-height: 2.75rem; font-size: 1rem; }
+}
+@media (max-width: 360px) {
+  header { padding-inline: 1rem; gap: .5rem; }
+  header .brand { flex-basis: 11rem; }
+  .brand-logo { width: 2.75rem; height: 2.5rem; }
+  .hero-content, .section { padding-inline: 1.25rem; }
+  .values { padding-inline: 1.25rem; }
+  .values article { column-gap: 1rem; }
+  .contact-box { padding: 1.25rem; }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .portrait { width: 26rem; }
+  .actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .values { padding-inline: max(1.5rem, calc((100% - 37rem) / 2)); }
+}
