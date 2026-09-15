@@ -3,3 +3,5 @@
 .line-icon svg{width:44px;height:44px;display:block;margin:auto}
 
 .logo-crop{display:block;position:relative;flex:0 0 84px;width:84px;height:82px;overflow:hidden;border-radius:50%}.logo-crop img{position:absolute;width:111px;height:auto;max-width:none;left:-14px;top:-18px}footer .logo-crop{transform:scale(.85);margin:-6px}@media(max-width:800px){.logo-crop{flex-basis:64px;width:64px;height:62px}.logo-crop img{width:85px;left:-11px;top:-14px}.brand{gap:12px}}
+
+.brand-logo{display:block;width:155px;height:130px;object-fit:contain}header{padding-top:12px;padding-bottom:12px}footer .brand-logo{width:120px;height:101px}@media(max-width:800px){.brand-logo{width:118px;height:99px}header{padding-block:10px}}
