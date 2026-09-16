@@ -19,9 +19,6 @@
 .whatsapp-float:hover { background: #128c4c; transform: translateY(-2px); }
 .whatsapp-float:focus-visible { outline: 3px solid white; outline-offset: 4px; }
 .whatsapp-float { cursor: pointer; padding: 0; }
-.whatsapp-note { position: fixed; right: 1.5rem; bottom: calc(6rem + env(safe-area-inset-bottom)); width: min(19rem, calc(100% - 2rem)); padding: 1rem 1.25rem; border: 1px solid var(--line); background: var(--panel); color: var(--text); z-index: 21; border-radius: 6px; box-shadow: 0 4px 20px #0007; font-size: .9375rem; line-height: 1.6; }
-.whatsapp-note p { margin: .375rem 0 0; color: var(--muted); }
-.whatsapp-note[hidden] { display: none; }
 #form-status:not(:empty) { border-left: 3px solid var(--gold); padding: .75rem; background: #12110e; }
 @media(max-width:800px) {
  .contact { grid-template-columns: 1fr; gap: 1rem; }
